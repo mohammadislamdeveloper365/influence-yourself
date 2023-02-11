@@ -1,0 +1,14 @@
+.influencer-logo {
+    font-family: 'Dancing Script', cursive;
+    font-size:3rem;
+    color:var(--secondary-color);
+}
+
+.influencer-navigation {
+    list-style-type: none;
+    
+}
+
+.influencer-navigation a {
+    text-decoration: none;
+}
