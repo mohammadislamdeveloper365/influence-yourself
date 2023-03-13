@@ -1,25 +1,98 @@
-.influencer-logo {
-    font-family: 'Dancing Script', cursive;
-    font-size:3rem;
-    color:var(--secondary-color);
+
+#influencer--header {
+    padding:5rem 3rem;
 }
 
-.influencer-navigation {
+#influencer--header-logo {
+    font-family: 'Lobster', cursive;
+    font-size:3.5rem;
+    font-weight: 900;
+    text-shadow: 1rem 0.5rem 0.5rem red;
+    cursor:grab;
+    /* color:blue; */
+}
+
+
+.fa-bars {
+    font-size: 3.5rem;
+    cursor:grab;
+}
+
+.fa-xmark {
+    font-size:3.5rem;
+    cursor:grab;
+}
+
+
+
+#influencer--header-main-menu {
     list-style-type: none;
-    position: relative;
 }
 
-.influencer-navigation a {
+#influencer--header-main-menu a {
     text-decoration: none;
+    cursor:grab;
 }
 
-.hamburger-menu-bar {
-    font-size: 3rem;
-    position:absolute;
-    right:40px;
-    display:block;
+
+.fa-cart-shopping {
+    font-size: 2rem;
 }
 
-@media only screen and (max-width:991px){
+@media only screen and (max-width:700px) {
+    #shopping-cart {
+        position:absolute;
+        right:1rem;
+        top:5.5rem;
+    }
     
+    .fa-cart-shopping {
+        font-size: 3.5rem;
+        padding:0;
+    }
+    
+    #influencer--header-open-menu {
+        display:block;
+    }
+
+    #influencer--header-main-menu {
+        position:fixed;
+        top:-100%;
+        height:100vh;
+        right:0;
+        left:0;
+        background-color: rgb(0, 0, 0,0.5);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: top 1s ease;
+    }
+
+    #influencer--header-main-menu a {
+        transition:font-size 0.2 ease, color 0.2s ease;
+    }
+
+    #influencer--header-main-menu a:hover {
+        font-size:3rem;
+        color:var(--color-info);
+    }
+
+    #influencer--header-main-menu a {
+        font-size: 2.5rem;
+        color:var(--color-light);
+    }
+
+    #influencer--header-close-menu {
+        position:fixed;
+        right:1rem;
+        top:1rem;
+        z-index:2;
+    }
+
+    .fa-magnifying-glass {
+        display: none;
+    }
+
 }
+
+

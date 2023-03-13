@@ -354,6 +354,9 @@ Display Value
     display:inline;
 }
 
+.d-none {
+    display:none;
+}
 /*
 --------------
 Text Alignment
