@@ -11,12 +11,15 @@
     <link rel="shortcut icon" href="./images/gear.png" type="image/x-icon">
     <link rel="stylesheet" href="./stylesheet/library.css">
     <link rel="stylesheet" href="./stylesheet/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4771d5cd20.js" crossorigin="anonymous"></script>
     <script defer src="./js/index.js"></script>
 </head>
 <body>
-    <header class="d-flex container-fluid mb-5 align-items-center justify-content-between" id="influencer--header" >
-        <div id="influencer--header-open-menu" class="text-dark d-none">
+    <header class="d-flex container-fluid mb-5 align-items-center justify-content-between mb-5" id="influencer--header" >
+        <div id="influencer--header-open-menu" class="text-dark d-none" >
             <i class="fa-solid fa-bars"></i>
         </div>
         <div id="influencer--header-logo" class="text-dark monu">
@@ -40,5 +43,29 @@
             </div>
         </nav>
     </header>
+    <main>
+        <section id="influencer-gear--main-journey" class="row container-xs">
+            <div class="col-md-7 p-5 influencer-gear--main-journey-description">
+                <h1>
+                    Start Your Journey As Influencer
+                </h1>
+                <p class="py-2">
+                    An influencer, also referred to as a social media influencer, is someone who leverages social media channels to influence followers’ buying decisions.
+                </p>
+                <div id="prebook-btn-container">
+                    <button class="btn btn-secondary prebook-btn">
+                        Prebook Now <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-5 p-5 influencer-gear--main-journey-camera">
+                <div class="outer-border d-flex align-items-center">
+                    <div class="inner-border">
+                        <img src="./images/main-camera.png" id="main-camera" alt="camera image" >
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

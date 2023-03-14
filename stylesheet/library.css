@@ -19,12 +19,13 @@ CSS Framework/Library
 */
 :root {
     --primary-color:#370b8e;
-    --secondary-color:#EF5354;
+    --secondary-color:rgba(224, 44, 109, 1);
     --color-danger:#E21717;
     --color-dark: black;
     --color-light:rgb(255, 255, 255);
     --color-info:#EDBF69;
     --color-light-dark:rgb(117, 130, 131,0.1);
+    --color-purple: rgba(241, 228, 255, 1);
 }
 /*
 ---------
@@ -253,6 +254,8 @@ margin , padding
     margin-bottom:2rem;
 }
 
+
+
 .mx-auto {
     margin:auto;
 }
@@ -314,20 +317,24 @@ margin , padding
 }
 
 .px-1 {
-    padding:0.5rem;
+    padding:0 0.5rem;
 }
 
 .px-2 {
-    padding:1rem;
+    padding:0 1rem;
 }
 .px-3 {
-    padding:1.5rem;
+    padding:0 1.5rem;
 }
 .px-4 {
-    padding:2rem;
+    padding:0 2rem;
 }
 .px-5 {
-    padding:2.5rem;
+    padding:0 2.5rem;
+}
+
+.py-2 {
+    margin:1rem 0;
 }
 /*
 --------------
@@ -344,6 +351,10 @@ Display Value
 }
 .d-block {
     display:block;
+}
+
+.d-grid {
+    display:inline-grid;
 }
 
 .d-inline-block {

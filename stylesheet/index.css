@@ -1,6 +1,9 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
 
 #influencer--header {
-    padding:5rem 3rem;
+    padding:2rem 1.5rem;
 }
 
 #influencer--header-logo {
@@ -39,11 +42,36 @@
     font-size: 2rem;
 }
 
-@media only screen and (max-width:700px) {
+
+.prebook-btn {
+    border-radius:1.5rem;
+}
+
+.outer-border {
+    width:25rem;
+    border:1px solid var(--color-purple);
+    height:25rem;
+    border-radius: 50%;
+}
+
+.inner-border {
+    margin:auto;
+    width:20rem;
+    border:1px solid var(--color-purple);
+    height:20rem;
+    border-radius: 50%;
+    background-color: var(--color-purple);
+}
+
+#main-camera {
+    max-width:120%;
+}
+
+@media only screen and (max-width:850px) {
     #shopping-cart {
         position:absolute;
         right:1rem;
-        top:5.5rem;
+        top:2.5rem;
     }
     
     .fa-cart-shopping {
@@ -57,7 +85,7 @@
 
     #influencer--header-main-menu {
         position:fixed;
-        top:-100%;
+        top:-120%;
         height:100vh;
         right:0;
         left:0;
@@ -92,6 +120,29 @@
     .fa-magnifying-glass {
         display: none;
     }
+
+
+    #influencer-gear--main-journey {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .influencer-gear--main-journey-description {
+        order:2;
+        width:70%;
+        text-align: center;
+    }
+
+    .influencer-gear--main-journey-camera {
+        order:1;
+        width:70%;
+        display:flex;
+        justify-content: center;
+    }
+
+    /* #prebook-btn-container {
+        text-align: center;
+    } */
 
 }
 
