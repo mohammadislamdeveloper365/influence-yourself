@@ -73,9 +73,35 @@ body {
     cursor:grab;
 }
 
+.popular-grid-container {
+    width:80%;
+}
+
+.influencer-gear--main-popular-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
+    
+}
+
+.influencer-gear--main-popular-item {
+    box-shadow: 0.5rem 0.2rem 0.2rem rgb(0, 0, 0,0.1);
+}
+
+.img-popular {
+    width:90%;
+}
+
 @media only screen and (max-width:1000px){
     .logo-box {
         width:15%;
+    }
+
+    .popular-grid-container {
+        width:90%;
+    }
+
+    .influencer-gear--main-popular-container {
+        grid-template-columns: 1fr 1fr;
     }
     
 }
@@ -86,6 +112,10 @@ body {
         top:2.5rem;
     }
     
+    .popular-grid-container {
+        width:95%;
+    }
+
     .fa-cart-shopping {
         font-size: 3.5rem;
         padding:0;
@@ -162,5 +192,13 @@ body {
 @media only screen and (max-width:650px) {
     .logo-box {
         width:25%;
+    }
+}
+
+
+@media only screen and (max-width:575px) {
+    .influencer-gear--main-popular-container {
+        grid-template-columns: 1fr;
+    
     }
 }
