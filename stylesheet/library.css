@@ -440,6 +440,13 @@ Flex items Alignment
     list-style-type: none;
 }
 
+.img-fluid {
+    max-width: 100%;
+}
+
+.influencer-gear--main-logo-container {
+    flex-wrap: wrap;
+}
 
 /*
 ------------------

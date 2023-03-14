@@ -45,6 +45,7 @@ body {
 
 .prebook-btn {
     border-radius:1.5rem;
+    cursor:grab;
 }
 
 .outer-border {
@@ -67,6 +68,17 @@ body {
     max-width:120%;
 }
 
+.logo-box {
+    width:10%;
+    cursor:grab;
+}
+
+@media only screen and (max-width:1000px){
+    .logo-box {
+        width:15%;
+    }
+    
+}
 @media only screen and (max-width:850px) {
     #shopping-cart {
         position:absolute;
@@ -140,10 +152,15 @@ body {
         justify-content: center;
     }
 
-    /* #prebook-btn-container {
-        text-align: center;
-    } */
+    .logo-box {
+        width:20%;
+    }
 
 }
 
 
+@media only screen and (max-width:650px) {
+    .logo-box {
+        width:25%;
+    }
+}
